@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaka</title>
+    <style>
+        body {
+            background:url(/static/img/giphy.gif);height: 400px;
+    background-position: center;  
+    background-repeat:inherit; width:100%;
+ 
+        }
+        </style>
+</head>
+
+<body style="margin: 0;
+padding: 0;
+width: 100%; 
+text-align: center;
+ ">
+    <div style="position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+" >
+    
+        <form action="#" , method="post">
+            <label style="font-size: 45px; color: lightcyan;" for="url">Enter a URL :</label>
+
+            <input style="color: #fff!important;
+            padding: 10px 20px;
+            margin: 20px 0; font-size: 20px;
+            display: inline-block;" type="url" name="site_url" id="url" placeholder="https://example.com" pattern="https://.*" size="50"
+                required>
+            <br>
+            <input style="color: #fff!important;
+            padding: 10px 20px;
+            background: #db62ad;
+            margin: 20px 0; font-size: 25px;
+            display: inline-block;" type="submit" value="submit" class="btn btn-primary">
+        </form>
+        {% block content%}
+        {% endblock %}
+    </div>
+ 
+</body>
+
+</html>
