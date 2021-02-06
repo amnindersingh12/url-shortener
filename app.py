@@ -71,9 +71,5 @@ def redirection(short_url):
 def display_short_url(url):
     return render_template('shorturl.html', short_url_display=url)
 
-@app.route('/all_urls')
-def display_all():
-    return render_template('all_urls.html', vals=Urls.query.all())
-
 if __name__ == '__main__':
     app.run(debug=True)
